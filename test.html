@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comment Section</title>
+    <script src="https://www.gstatic.com/firebasejs/9.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.4.1/firebase-firestore.js"></script>
+    <script src="commentmanagement.js" type="module"></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="memos.html">Memos</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="test.html">Test</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h2>Here is some experimental stuff I am trying to test and impliment to my page. None of it works. </h2>
+    </div>
+    <!-- Comment Form -->
+    <div>
+      <h3>Leave a Bomment</h3>
+      <form id="comment-form">
+        <input type="text" id="name" placeholder="Your name (optional)" />
+        <textara
+          id="comment"
+          placeholder="Write your comment here..."
+          required
+        ></textara>
+        <button type="button" id="commentsubmitbutton">Submit</button>
+      </form>
+    </div>
+
+    <!-- Display Comments -->
+    <div id="comments-section">
+      <h3>Comments:</h3>
+      <div id="comment-list"></div>
+    </div>
+
+    <!-- Link to your Firebase app script -->
+    <script src="index.js"></script>
+  </body>
+</html>
